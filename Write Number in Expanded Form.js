@@ -1,6 +1,4 @@
-// Write Number in Expanded Form
 function expandedForm(num) {
-  // Return Array of expanded num 13 => [10, 3]
   const numberArray = num
     .toString()
     .split("")
@@ -9,9 +7,10 @@ function expandedForm(num) {
         const multuplier = array.slice(index + 1).length;
         const zeroCount = "0".repeat(multuplier);
         const pluSign = () => {
-          if (index == array.length - 1) {
+          if (index == array.length - 1 ) {
             return "";
           } else {
+          	console.log(array.length)
             return " + ";
           }
         };
